@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/address.h
+stdio.h
+-
+
+../include/employee.h
+
+/Users/karol/Desktop/kolos_git_cmake/src/address.cpp
+string
+-
+
+/Users/karol/Desktop/kolos_git_cmake/src/employee.cpp
+address.h
+/Users/karol/Desktop/kolos_git_cmake/src/address.h
+
+/Users/karol/Desktop/kolos_git_cmake/src/main.cpp
+employee.h
+/Users/karol/Desktop/kolos_git_cmake/src/employee.h
+address.h
+/Users/karol/Desktop/kolos_git_cmake/src/address.h
+
